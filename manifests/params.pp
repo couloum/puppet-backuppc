@@ -19,7 +19,7 @@ class backuppc::params {
       $cgi_directory      = "${install_directory}/cgi-bin"
       $cgi_image_dir      = "${install_directory}/image"
       $cgi_image_dir_url  = '/backuppc/image'
-      $log_directory      = '/var/lib/backuppc/log'
+      $log_directory      = "${topdir}/log"
       if ($::operatingsystemmajrelease == 6) {
         $config_apache      = '/etc/backuppc/apache.conf'
       } else {
